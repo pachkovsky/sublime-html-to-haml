@@ -1,0 +1,5 @@
+[
+  { "keys": ["shift+alt+f"], "command": "html_to_haml_from_file"},
+  { "keys": ["shift+alt+s"], "command": "html_to_haml_from_selection"},
+  { "keys": ["shift+alt+v"], "command": "html_to_haml_from_clipboard"}
+]
