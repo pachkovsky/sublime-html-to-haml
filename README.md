@@ -25,6 +25,12 @@ The "Packages" directory is located at:
 
 ## Usage
 
-* **Convert hole ERB or HTML file** `Shift+Alt+F` - creates new file in the same folder using the same name as the source ending with .haml. Works only in .html and .erb files.
-* **Convert selection** `Shift+Alt+S` - replaces selection of HTML or ERB with HAML content. Works only in .haml files.
-* **Convert clipboard content** `Shift+Alt+V` - inserts HAML of converted clipboard HTML or ERB content. Works only in .haml files.
+* **Convert hole ERB or HTML file** `Shift+Alt+F` - creates new file in the same folder using the same name as the source ending with '.html.haml'.
+* **Convert selection** `Shift+Alt+S` - replaces selection of HTML or ERB with HAML content.
+* **Convert clipboard content** `Shift+Alt+V` - inserts HAML of converted clipboard HTML or ERB content.
+
+### In Command Palette:
+
+* **HTML2Haml: Convert file**
+* **HTML2Haml: Convert selection**
+* **HTML2Haml: Convert clipboard content**

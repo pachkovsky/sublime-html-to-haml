@@ -19,7 +19,7 @@ class HtmlToHamlFromFileCommand(sublime_plugin.TextCommand):
 				self.view.window().open_file(target)
 
 	def is_enabled(self):
-		return (self.view.file_name().endswith(".html") or self.view.file_name().endswith(".erb"))
+		return True #return (self.view.file_name().endswith(".html") or self.view.file_name().endswith(".erb"))
 
 class HtmlToHamlFromSelectionCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
@@ -31,7 +31,7 @@ class HtmlToHamlFromSelectionCommand(sublime_plugin.TextCommand):
 					self.view.replace(edit, region, haml)
 
 	def is_enabled(self):
-		return self.view.file_name().endswith(".haml")
+		return True #return self.view.file_name().endswith(".haml")
 
 class HtmlToHamlFromClipboardCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
@@ -42,7 +42,7 @@ class HtmlToHamlFromClipboardCommand(sublime_plugin.TextCommand):
 				self.view.replace(edit, region, haml)
 
 	def is_enabled(self):
-		return self.view.file_name().endswith(".haml")
+		return True #return self.view.file_name().endswith(".haml")
 
 class HTHTools:
 	@classmethod

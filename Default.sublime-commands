@@ -1,0 +1,14 @@
+[
+  {
+    "caption": "HTML2Haml: Convert file",
+    "command": "html_to_haml_from_file"
+  },
+  {
+    "caption": "HTML2Haml: Convert selection",
+    "command": "html_to_haml_from_selection"
+  },
+  {
+    "caption": "HTML2Haml: Convert clipboard content",
+    "command": "html_to_haml_from_clipboard"
+  }
+]
