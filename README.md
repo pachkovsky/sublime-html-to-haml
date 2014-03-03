@@ -6,7 +6,7 @@ Converts files, selection and clipboard content from HTML or ERB to HAML using h
 
 ### [Sublime Package Control](http://wbond.net/sublime_packages/package_control)
 
-In the command Pallette choose **Package Control: Install Repository** and select **HTML2Haml**
+In the command Pallette choose **Package Control: Install Package** and select **HTML2Haml**
 
 ### Git installation
 
