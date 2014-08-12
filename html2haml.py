@@ -2,6 +2,8 @@ import urllib.request
 import json
 import sublime, sublime_plugin
 
+settings = sublime.load_settings("html2haml.sublime-settings")
+
 class HtmlToHamlFromFileCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		source = self.view.file_name()
