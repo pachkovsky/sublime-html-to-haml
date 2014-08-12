@@ -51,7 +51,7 @@ class HTHTools:
 	def post_html_return_haml(self, html):
 		host = 'http://html2haml-attributes.herokuapp.com/api.json'
 		attributes_style = settings.get("attributes_style", "default")
-		data = { 'page': {'html': html}, 'options': {attributes_style: True} }
+		data = { 'page': {'html': html}, 'options': {attributes_style: 'true'} }
 		data_json = json.dumps(data)
 		data_json = data_json.encode('utf-8')
 		req = urllib.request.Request(host, data_json, {'content-type': 'application/json'})
