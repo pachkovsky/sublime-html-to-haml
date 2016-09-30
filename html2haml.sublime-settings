@@ -1,4 +1,4 @@
 {
-  // options are: default, ruby19_style_attributes,  html_style_attributes
-  "attributes_style": "default"
+  "html_style_attributes": false,
+  "ruby19_style_attributes": false
 }

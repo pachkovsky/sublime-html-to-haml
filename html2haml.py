@@ -49,9 +49,13 @@ class HtmlToHamlFromClipboardCommand(sublime_plugin.TextCommand):
 class HTHTools:
 	@classmethod
 	def post_html_return_haml(self, html):
-		host = 'http://html2haml-attributes.herokuapp.com/api.json'
-		attributes_style = settings.get("attributes_style", "default")
-		data = { 'page': {'html': html}, 'options': {attributes_style: 'true'} }
+		host = 'http://html2haml.herokuapp.com/api.json'
+		options = {}
+		if settings.get("html_style_attributes", False):
+			options['html_style_attributes'] = "true"
+		if settings.get("ruby19_style_attributes", False):
+			options['ruby19_style_attributes'] = "true"
+		data = { 'page': {'html': html}, 'options': options }
 		data_json = json.dumps(data)
 		data_json = data_json.encode('utf-8')
 		req = urllib.request.Request(host, data_json, {'content-type': 'application/json'})
