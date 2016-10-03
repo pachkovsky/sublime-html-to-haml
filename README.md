@@ -12,7 +12,7 @@ In the command Pallette choose **Package Control: Install Package** and select *
 
 Clone the repository in your Sublime Text "Packages" directory:
 
-    git clone https://github.com/pavelpachkovskij/sublime-html-to-haml.git "HTML2Haml"
+    git clone https://github.com/pachkovsky/sublime-html-to-haml.git "HTML2Haml"
 
 The "Packages" directory is located at:
 
